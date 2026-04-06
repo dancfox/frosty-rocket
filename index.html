@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frosty Rocket Consulting</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0f1e;
+      color: #e8eaf6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 60px;
+      border-bottom: 1px solid #1e2a4a;
+    }
+
+    .logo img {
+      height: 120px;
+      width: auto;
+    }
+
+    nav a {
+      color: #aab4d4;
+      text-decoration: none;
+      margin-left: 36px;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #7ecfff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: #7ecfff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #aab4d4;
+      max-width: 560px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #7ecfff;
+      color: #0a0f1e;
+      padding: 14px 36px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #a8dfff;
+    }
+
+    .services {
+      padding: 80px 60px;
+      background-color: #0d1526;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 28px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #131d35;
+      border: 1px solid #1e2a4a;
+      border-radius: 10px;
+      padding: 36px 28px;
+      max-width: 280px;
+      flex: 1 1 220px;
+    }
+
+    .card .icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #7ecfff;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #aab4d4;
+      line-height: 1.6;
+    }
+
+    .contact {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .contact p {
+      color: #aab4d4;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .contact a.btn {
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid #1e2a4a;
+      color: #4a5580;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="frosty-rocket-logo.svg" alt="Frosty Rocket" /></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Consulting that <span>launches</span> your business</h1>
+    <p>Frosty Rocket helps companies move fast, think clearly, and build what matters. We partner with you from strategy to execution.</p>
+    <a href="#contact" class="btn">Get in touch</a>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we do</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">&#128200;</div>
+        <h3>Strategy</h3>
+        <p>Align your team around a clear vision and a plan that actually works in the real world.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#9881;</div>
+        <h3>Operations</h3>
+        <p>Streamline processes, cut waste, and build systems that scale with your growth.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#128187;</div>
+        <h3>Technology</h3>
+        <p>Make smart technology decisions without getting lost in complexity or vendor noise.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Ready to launch?</h2>
+    <p>Let's talk about what you're building and how we can help.</p>
+    <a href="mailto:hello@frostyrocket.com" class="btn">hello@frostyrocket.com</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Frosty Rocket Consulting. All rights reserved.
+  </footer>
+
+</body>
+</html>
